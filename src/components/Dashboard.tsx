@@ -102,9 +102,9 @@ const Dashboard = () => {
         <main className="lg:col-span-3 bg-white p-6 rounded-md">
           <div className="flex justify-between items-center flex-wrap gap-4">
             <div>
-              <h2 className="text-xl font-bold">Repositories</h2>
+              <h2 className="text-xl text-gray-700 font-bold">Repositories</h2>
               <p className="text-sm text-gray-500">33 total repositories</p>
-            </div>
+          </div>
             <div className="flex space-x-3">
               <button className="flex items-center bg-gray-200 text-sm text-gray-700 px-4 py-2 rounded-md">
                 <FaSync className="mr-2" />
