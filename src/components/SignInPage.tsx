@@ -2,7 +2,7 @@ import React from "react";
 import { FcPieChart, FcUp } from "react-icons/fc";
 import { FaGithub, FaBitbucket } from "react-icons/fa";
 import { VscAzureDevops } from "react-icons/vsc";
-import { FaGitlab } from "react-icons/fa6";
+import { FaGitlab } from "react-icons/fa";
 import Logo from "../assets/CodeAnt.png";
 
 // Helper function for typing icons
@@ -20,17 +20,22 @@ const SignInPage: React.FC = () => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <div className="bg-white shadow-lg rounded-lg w-full max-w-md lg:max-w-4xl flex flex-col lg:flex-row relative overflow-hidden">
         {/* Left Content */}
-        <div className="hidden lg:flex flex-col justify-center p-4 w-1/2 bg-gray-50 relative">
+        <div className="hidden lg:flex flex-col justify-center p-4 w-1/2 bg-white relative">
           <div className="flex flex-col space-y-4">
-            <div className="relative flex flex-col bg-white shadow-lg rounded-lg p-6">
-              <div className="flex items-center mb-2">
+            <div className="relative flex flex-col bg-white shadow-lg rounded-lg p-6 pb-20">
+              <img
+                src={Logo}
+                alt="CodeAnt AI Logo"
+                className="absolute h-13 left-0 bottom-0 bg-blend-overlay z-0"
+              />
+              <div className="flex items-center mb-2 z-10">
                 <img src={Logo} alt="CodeAnt AI Logo" className="h-12 mr-2" />
                 <h2 className="text-sm text-gray-600 font-bold">
                   AI to Detect & Autofix Bad Code
                 </h2>
               </div>
               <div className="border-t border-gray-200 my-4"></div>
-              <ul className="grid grid-cols-3 gap-4 text-gray-600 border border-gray-300 p-4 rounded-lg bg-gray-50 shadow-md">
+              <ul className="grid grid-cols-3 gap-4 text-gray-600 border border-gray-300 p-4 rounded-lg bg-gray-50 shadow-md z-10 relative">
                 <li className="flex flex-col items-center">
                   <b className="text-lg text-gray-800">30+</b>
                   <span className="text-xs">Language Support</span>
@@ -46,7 +51,7 @@ const SignInPage: React.FC = () => {
               </ul>
               <div className="relative bottom-4 left-40 mb-1" style={{ width: "220px" }}>
                 <div className="absolute top-0 left-0 w-full h-full bg-gray-200 rounded-lg"></div>
-                <div className="relative flex flex-col justify-between items-start bg-gray-50 shadow-md rounded-lg p-6 z-15">
+                <div className="relative flex flex-col justify-between items-start bg-gray-50 shadow-md rounded-lg p-6 z-10">
                   <PieChartIcon className="text-3xl" />
                   <p className="text-sm text-gray-500">Issues Fixed</p>
                   <p className="text-2xl font-bold">500K+</p>
